@@ -56,7 +56,6 @@ body{
 }
 
 @media (max-width: 450px) {
-  
     #calculator{
         padding: 2rem;
     }
