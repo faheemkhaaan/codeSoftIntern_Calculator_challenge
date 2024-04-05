@@ -36,7 +36,7 @@ buttons.addEventListener('click', (e) => {
 
         if(target.textContent == 'AC'){
             result.textContent = '0'
-            input = '0'
+            input = ''
         }
      
     }
