@@ -4,23 +4,13 @@ const result = document.getElementById('result');
 let input = "";
 let calculation = ''
 buttons.addEventListener('click', (e) => {
-
-    
     let target = e.target;
-
-    console.log(target);
-
     if(target.className != 'buttons'){
-
-       
-
         if (target.className === 'equal') {
             if(target.textContent !== "AC" && result.textContent !== ''){
                 console.log(input);
                 calculation = eval(input);
             }
-            
-            console.log(calculation);
             input = String(calculation)
             result.textContent = input;
         } else if (
@@ -35,12 +25,10 @@ buttons.addEventListener('click', (e) => {
         result.textContent = input;
 
         if(target.textContent == 'AC'){
-            result.textContent = '0'
-            input = ''
+            result.textContent = '0';
+            input = '';
         }
-     
     }
-
 })
 
 
